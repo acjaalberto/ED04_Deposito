@@ -1,3 +1,4 @@
+package Cuentas;
 /**
  * Esta clase define objetos que contienen tantos enteros aleatorios entre 0 y 1000 como se le definen al crear un objeto
  * @author Alberto C. Jimenez
@@ -7,7 +8,39 @@ public class CCuenta {
 
 
     private String nombre;
-    private String cuenta;
+    public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getCuenta() {
+		return cuenta;
+	}
+
+	public void setCuenta(String cuenta) {
+		this.cuenta = cuenta;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getTipoInterés() {
+		return tipoInterés;
+	}
+
+	public void setTipoInterés(double tipoInterés) {
+		this.tipoInterés = tipoInterés;
+	}
+
+	private String cuenta;
     private double saldo;
     private double tipoInterés;
 
